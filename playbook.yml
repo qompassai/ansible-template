@@ -1,0 +1,10 @@
+# playbook.yml — smallest useful playbook.
+# Check: `ansible-playbook --syntax-check playbook.yml`
+# Dry run: `ansible-playbook --check playbook.yml`
+---
+- name: Hello from the template
+  hosts: web
+  tasks:
+    - name: Say hello
+      ansible.builtin.debug:
+        msg: Hello from the Qompass AI Ansible template.
